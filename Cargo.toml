@@ -1,0 +1,11 @@
+[package]
+name = "fdscanrs"
+version = "0.0.0"
+edition = "2024"
+
+[dependencies]
+pyo3 = { version = "0.18", features = ["extension-module"] }
+rayon = "1.6"  # For parallelism
+
+[lib]
+crate-type = ["cdylib"]
