@@ -1,3 +1,6 @@
+use rayon::prelude::*;
+use std::collections::HashSet;
+
 pub fn brute_force_keys(data: Vec<Vec<String>>) -> Vec<Vec<usize>> {
     let num_cols = data[0].len();
     let mut candidate_keys = vec![];
